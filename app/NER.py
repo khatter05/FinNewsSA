@@ -16,7 +16,7 @@ def concat_entity(entity):
     res = []
     s = ""
     for ent in entity:
-        if ent['label'] == 'B-ORG':
+        if (ent['label'] == 'B-ORG') and not('#' in ent['entity']):
             if s:
                 res.append(s)
                 s = ent['entity']

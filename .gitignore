@@ -3,3 +3,4 @@ API.txt
 .ipynb_checkpoints
 /app/__pycache__
 API.py
+__pycache__
